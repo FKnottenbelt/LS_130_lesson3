@@ -8,14 +8,14 @@ developers expect to find test code in a `test` directory, and Ruby source
 files in the `lib` directory.
 
 Make sure to setup the require_relative path in you test correctly
-
+```
 todolist_project
 ├── README.md
 ├── lib
 │   └── todolist_project.rb
 └── test
     └── todolist_project_test.rb
-    
+```    
     
 There are many other directories that you may need. For instance, 
 web-based programs generally require "assets" like images, JavaScript,
