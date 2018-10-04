@@ -2,25 +2,37 @@
 
 We need a seperate git repro for this lesson (todolist_project structure)
 
+covers:
+- create a repro
+- set up directories
+- set up the Gemfile
+- install new ruby version with rvm
+- install bundler
+- run bundler
+- adding gems
+- set up your rakefile
+- make your project into a rubygem
+  - add directories
+  - prepare README.md
+  - write documentation
+  - prepare gemspec file
+  - add gemspec to Gemfile
+  - rerun bundler install
+  - add Rubygem task to rakefile
+  - run rake build
 
-Typically, ruby projects have a strict organization. Specifically,
-developers expect to find test code in a `test` directory, and Ruby source
-files in the `lib` directory.
-
-Make sure to setup the require_relative path in you test correctly
+final project structure:
 ```
 todolist_project
-├── README.md
+├── Gemfile
+├── Gemfile.lock
 ├── lib
-│   └── todolist_project.rb
-└── test
-    └── todolist_project_test.rb
-```    
-    
-There are many other directories that you may need. For instance, 
-web-based programs generally require "assets" like images, JavaScript,
-and CSS (stylesheets) -- these often reside in an `assets` directory
-with a `subdirectory` for each file type: `images`, `javascript`, and
-`stylesheets`. 
-
-HTML "template" files usually reside in a `views` directory. 
+│   └── todolist_project.rb
+├── pkg
+│   └── todolist_project-1.0.0.gem
+├── Rakefile
+├── README.md
+├── test
+│   └── todolist_project_test.rb
+└── todolist_project.gemspec
+```
